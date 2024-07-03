@@ -1,9 +1,13 @@
+
+import AirCityInfo from "./airQuality/airCityInfo/AirCityInfo";
+
+
 const Home  = () => {
 
     return (
-        <>
-        <h1>Disfruta de la fruta</h1>
-        </>
+        <div className="w-screen h-screen bg-green-gradient">
+            < AirCityInfo status="buena" qualityNumber="47" city="Oviedo"/>
+        </div>
 
     )
 }
