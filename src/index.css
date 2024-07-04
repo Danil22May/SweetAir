@@ -12,7 +12,8 @@
 
 :root {
     --col-white: rgb(246, 246, 246);
-    --col-darkgrey: rgb(53, 44, 53);
+    --col-purer-white: rgb(251 251 251);;;
+    --col-dark: rgb(53 44 53);
     --col-green-1:rgb(186, 235, 73) ;
     --col-green-2: rgb(145 217 73);
     --col-yellow-1: rgb(255, 228, 85);
@@ -25,10 +26,4 @@
     --col-red-2: rgb(118 38 43);
     --col-violet-1: rgb(201 94 204);
     --col-violet-2: rgb(192 59 195);
-    --col-bg-good: ;
-    --col-bg-medium: ;
-    --col-bg-high:var(--col-bg-bad) ;
-    --col-bg-bad: ;
-    --col-bg-danger: ;
-    --col-bg-death: ;
 }
