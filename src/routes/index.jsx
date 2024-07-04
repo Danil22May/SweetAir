@@ -18,7 +18,7 @@ const router = createBrowserRouter ([
                 element: <Home />
             },
             { 
-                path:"/airquality",
+                path:"/airquality/:cityName",
                 element: <AirQualityMain />
             },
             { 
