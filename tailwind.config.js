@@ -18,6 +18,11 @@ module.exports = {
         'violet-gradient': 'linear-gradient(to top, #C03BC3, #C95ECC)',
         'white-gradient': 'linear-gradient(to top, #FBFBFB, #E9E9E9)',
       },
+      colors: {
+        white: "rgb(246, 246, 246)",
+        darkGrey: "rgb(53, 12, 53)",
+      
+      }
     },
   },
   plugins: [],
