@@ -30,7 +30,7 @@ const CommentsMain = () => {
     return (
         <div className="w-[85%] m-auto flex flex-col items-center justify-center content-center bg-[color:var(--col-white)] rounded-[22px] mt-[1em] py-5 gap-4 drop-shadow-xl">
             {comments.map(comment => (
-                <SingleComment key={comment.id} comment={comment.comment} author = {comment.author} admin = {false}/>
+                <SingleComment key={comment.id} id = {comment.id} comment={comment.comment} author = {comment.author} admin = {false}/>
             ))}
             <Link to="/comments"><FontAwesomeIcon icon={faAngleDoubleRight} className="border-[solid] fa-lg text-[color:var(--col-dark)]"/></Link>
         </div>
