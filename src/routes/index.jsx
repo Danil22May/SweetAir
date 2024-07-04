@@ -14,7 +14,7 @@ const router = createBrowserRouter ([
         element: <Layout/>,
         children: [
             {   path:"/",
-                element: <Login />
+                element: <Home />
             },
             { 
                 path:"/airquality",
