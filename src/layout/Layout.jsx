@@ -4,12 +4,11 @@ import Navbar from "../components/logo/Navbar";
 
 const Layout = () => {
     return(
-        <>
-            <Navbar />
+        <div>
             <main>
                 <Outlet />
             </main>
-        </>
+        </div>
     )
 
 }
