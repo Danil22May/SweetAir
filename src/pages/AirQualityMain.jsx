@@ -76,10 +76,10 @@ const AirQualityMain = () => {
     }
 
     return (
-        <div className={`w-screen h-screen ${backgroundClass}`}>
+        <div className={`w-screen h-[100vh] ${backgroundClass}`}>
             <Navbar />
             
-                <div className="lg:bg-[color:var(--col-purer-white)] lg:m-auto lg:w-[40%] lg:h-[75%] rounded-[20px] justify-center content-center lg:drop-shadow-xl ">
+                <div className="lg:bg-[color:var(--col-purer-white)] lg:mx-auto lg:overflow-auto  lg:w-[40%] lg:h-[75%] rounded-[20px] justify-center content-center lg:drop-shadow-xl lg:py-4 lg:mb-[10em] ">
                 {airQualityData && (
                     <AirCityInfo
                         container="lg:justify-center bg-opacity-50"

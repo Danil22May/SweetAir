@@ -59,8 +59,8 @@ const SingleComment = ({ id, comment, author, admin, onDelete, onUpdate }) => {
     };
 
     return (
-        <div className="rounded-[22px] bg-[color:var(--col-dark)] w-[85%] py-4 px-3 flex flex-row items-center justify-start space-x-4">
-            <FontAwesomeIcon icon={faMessage} className="text-[color:var(--col-white)] my-2" />
+        <div className="rounded-[22px] bg-[color:var(--col-dark)] w-[85%] py-4 px-3 flex flex-row items-center justify-between lg:justify-center space-x-4 ">
+            <FontAwesomeIcon icon={faMessage} className="text-[color:var(--col-white)] my-2 " />
             {isEditing ? (
                 <div className="flex flex-col">
                     <input
@@ -85,12 +85,12 @@ const SingleComment = ({ id, comment, author, admin, onDelete, onUpdate }) => {
                 <div className="flex flex-col gap-7 fa-sm space-between pl-1">
                     <FontAwesomeIcon
                         icon={faPen}
-                        className="text-[color:var(--col-white)] self-start self-end"
+                        className="text-[color:var(--col-white)] cursor-pointer self-end"
                         onClick={() => setIsEditing(!isEditing)}
                     />
                     <FontAwesomeIcon
                         icon={faTrashCan}
-                        className="text-[color:var(--col-white)] self-end"
+                        className="text-[color:var(--col-white)] self-end cursor-pointer"
                         onClick={handleDelete}
                     />
                 </div>
