@@ -1,6 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from 'react';
 import SingleComment from "../components/comments/SingleComment";
 import Navbar from "../components/logo/Navbar";
+import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import FormComments from "../components/comments/FormComments";
+
+
 
 const Comments = () => {
     const [comments, setComments] = useState([]);
@@ -23,12 +29,21 @@ const Comments = () => {
     };
 
     return (
-        <div className="bg-white-gradient">
+        <div className="bg-white-gradient h-screen ">
             <Navbar />
-            <div className="w-[85%] m-auto flex flex-col items-center justify-center content-center bg-[color:var(--col-white)] rounded-[22px] mt-[1em] py-5 gap-4 drop-shadow-xl">
-                {comments.map((comment, index) => (
-                    <SingleComment key={index} comment={comment.comment} author={comment.author}/>
-                ))}
+            <div className="flex flex-col w-[90%] justify-center m-auto gap-2">
+                <div className="flex flex-row justify-between content-center pb-2">
+                    <Link to="/airquality">
+                        <FontAwesomeIcon icon={faAngleDoubleLeft} className="text-[color:var(--col-dark)] self-center"/>
+                    </Link>
+                    <h1 className="uppercase text-[1.5em] self-center">Comments</h1>
+                </div>
+                <div className="flex flex-col items-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-5 gap-3 drop-shadow-xl overflow-auto h-[30em] no-scrollbar">
+                    {comment.map((comment, index) => (
+                        <SingleComment key={index} comment={comment} admin="hidden"/>
+                    ))}
+                </div>
+                    <FormComments />
             </div>
         </div>
     );
