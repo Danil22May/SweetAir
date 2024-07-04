@@ -13,14 +13,11 @@ const AdminComments = () => {
     return (
         <div className="bg-white-gradient h-screen ">
             <Navbar />
-            <div className="flex flex-col w-[90%] justify-center m-auto gap-2">
-                <div className="flex flex-row justify-between content-center pb-2">
-                    <Link to="/airquality">
-                        <FontAwesomeIcon icon={faAngleDoubleLeft} className="text-[color:var(--col-dark)] self-center"/>
-                    </Link>
-                    <h1 className="uppercase text-[1.5em] self-center">Comments</h1>
+            <div className="flex flex-col w-[90%] lg:w-[50%] lg:h-[80%] h-[90%] justify-around m-auto gap-2 lg:mt-[5em]">
+                <div className="flex flex-row self-end content-center pb-2">
+                    <h1 className="uppercase text-[1.5em] item-end lg:mb-[2em]">Comments</h1>
                 </div>
-                <div className="flex flex-col items-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-5 gap-3 drop-shadow-xl overflow-auto h-[30em]">
+                <div className="flex flex-col items-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-3 lg:py-[3em] gap-3 drop-shadow-xl overflow-auto h-[60%] lg:h-[50em]">
                     {comment.map((comment, index) => (
                         <SingleComment key={index} comment={comment} admin="flex"/>
                     ))}

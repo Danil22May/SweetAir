@@ -31,15 +31,14 @@ const Comments = () => {
     return (
         <div className="bg-white-gradient h-screen ">
             <Navbar />
-            <div className="flex flex-col w-[90%] justify-center m-auto gap-2">
+            <div className="flex flex-col w-[90%] lg:w-[50%] lg:h-[80%] h-[90%] justify-around m-auto gap-2 lg:mt-[5em]">
                 <div className="flex flex-row content-center self-end pb-2">
                     <h1 className="uppercase text-[1.5em] self-end">Comments</h1>
                 </div>
-                <div className="flex flex-col justify-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-5 gap-3 drop-shadow-xl overflow-auto h-[30em] no-scrollbar">
+                <div className="flex flex-col lg:flex-row justify-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-5 gap-3 drop-shadow-xl overflow-auto h-[30em] no-scrollbar">
                 {comments.map((comment, index) => (
                     <SingleComment key={index} comment={comment.comment} author={comment.author} admin="hidden"/>
-                ))}
-                </div>
+                ))} </div>
                     <FormComments />
             </div>
         </div>
