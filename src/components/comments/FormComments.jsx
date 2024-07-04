@@ -20,18 +20,21 @@ const FormComments = () => {
             if (response.ok) {
                 const result = await response.json();
                 alert('Comentario creado exitosamente');
+
                 setUname('');
                 setComment('');
+                window.location.reload(); 
             } else {
                 alert('Error al crear el comentario');
             }
         } catch (error) {
             //error
+            window.location.reload(); 
         }
     };
 
     return (
-        <section className="w-[85%] bg-[color:var(--col-purer-white)] rounded-[22px] mt-[1em] py-2 drop-shadow-xl no-scrollbar m-auto flex justify-center">
+        <section className="w-[100%] bg-[color:var(--col-purer-white)] rounded-[22px] mt-[1em] py-2 drop-shadow-xl no-scrollbar m-auto flex justify-center">
             <form onSubmit={handleSubmit} className="w-[86%] flex flex-col px-4 gap-6">
                 <input 
                     type="text" 
