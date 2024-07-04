@@ -4,25 +4,7 @@ import Navbar from "../components/logo/Navbar";
 import FormComments from "../components/comments/FormComments";
 
 const Comments = () => {
-    const [comments, setComments] = useState([]);
-
-    useEffect(() => {
-        fetchComments();
-    }, []);
-
-    const fetchComments = async () => {
-        try {
-            const response = await fetch('http://localhost:3000/api/comments'); 
-            if (!response.ok) {
-                throw new Error('Failed to fetch comments');
-            }
-            const data = await response.json();
-            setComments(data);
-        } catch (error) {
-            console.error('Error fetching comments:', error);
-        }
-    };
-
+    
     return (
         <div className="bg-white-gradient h-screen ">
             <Navbar />

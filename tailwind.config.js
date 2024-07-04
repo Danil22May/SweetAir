@@ -9,10 +9,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-sans-main)', 'Poppins', 'sans-serif'],
-        serif: ['var(--font-sans-secondary)', 'Noto sans', 'sans-serif'],
-      },
       backgroundImage: {
         'green-gradient': 'linear-gradient(to top, #91D949, #BAEB49)',
         'yellow-gradient': 'linear-gradient(to top, #F7D93C, #FFE455)',
