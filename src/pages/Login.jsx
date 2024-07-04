@@ -37,7 +37,7 @@ const Login  =() => {
                         <h3 className="font-medium text-[--col-dark] text-[1.5rem] ">Contraseña</h3>
                         <div>
                             <input 
-                                    type="Usuario" 
+                                    //type="Usuario" 
                                     className={`rounded-[0.5rem] shadow-[inset_0px_1px_8px_rgba(0,0,0,0.2)] border-[#D8D8D8] w-[20rem] h-[2rem]`}
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
