@@ -1,5 +1,5 @@
 
-# SWEET Air 
+# SWEET Air 🌐 🌬️
 
 ## Index
 
@@ -12,28 +12,29 @@
 - [Technologies 🔧](#technologies-)
     - [Front-end](#front-end-)
     - [Back-end](#back-end-)
+- [Demo ](#demo-)
 - [Contribution 🤝](#contribution-)
 - [Developers](#developers-)
-- [Demo ](#demo-)
 - [Licence 📜](#licence-)
 
 
 ## Project 
 
-**SweetAir** is an innovative application web designed to show live updated data of the quality's air from any city around the globe. 
+**SweetAir** is an innovative application web designed to show live updated air quality data from any city around the globe. 
 
-This app's focuses on helping people with health problems, being it respiratory or otherwise, stay safe and sound wherever they are. 
+This app's focuses on helping people with health problems, be it respiratory or otherwise, stay safe and sound wherever they are. 
 
-For that reason, our mission is to keep people updated and safe in potentially harming environments that could impact their health in negative ways.
+For that reason, our mission is to keep people updated and safe in potentially harming environments that could negatively impact their health.
 
 ### Distribution of tasks
 
 In the development of our project, each team member has played a crucial role in ensuring the success of our API and design. We organized our project with Jira, through Epics and User Stories as seen below. 
 
-(IMAGEN)
+<img width="1414" alt="Captura de pantalla 2024-07-05 a les 0 31 35" src="https://github.com/Danil22May/SweetAir/assets/168748574/60b3db86-4a5e-44d5-abe4-d816abaa2f1f">
 
 
-As for the development of the app, we organized ourselves and the steps we followed to carry out the project.
+
+As for the app's development, we organized ourselves and the steps we followed to carry out the project.
 
 **For the Back-end and API fetching:**
 
@@ -98,7 +99,7 @@ node app.js
 This flow diagram illustrates the interaction between the frontend and backend of our SweetAir application.
 
 **Frontend:**
-The user interacts with the frontend of the application, which is designed to be intuitive and user-friendly. The frontend is responsible for displaying information about air quality and providing recommendations based on the data.
+The user interacts with the front of the application, which is designed to be intuitive and user-friendly. The frontend is responsible for displaying information about air quality and providing recommendations based on the data.
 
 **Backend:**
 The backend handles the logic and processing required to serve the frontend's requests. When the frontend makes a request for air quality data, the backend springs into action.
@@ -119,6 +120,16 @@ By structuring our application this way, we ensure that the frontend remains res
 
 **Front:**
 
+- User flow:
+
+![UserFlow drawio](https://github.com/Danil22May/SweetAir/assets/168748574/d0823fc2-15a6-49e5-9426-617239ea4789)
+
+- Flow chart:
+
+![FlowChart drawio](https://github.com/Danil22May/SweetAir/assets/168748574/8e1e1143-4e04-49fa-9274-83ea5a174d72)
+
+
+
 ## Technologies
 
 #### Frontend
@@ -133,6 +144,16 @@ JavaScript: A versatile programming language commonly used for web development.
 JUnit: A testing framework for Java.
 MySQL: An open-source relational database management system.
 Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+
+## Demo
+**Desktop**
+
+https://github.com/Danil22May/SweetAir/assets/168748574/94d32d31-e449-4ffe-9f39-359e3ecf2203
+
+**Mobile**
+
+https://github.com/Danil22May/SweetAir/assets/168748574/382e8215-0aae-40f0-a2f4-7f7cdf1bd2b7
 
 ## Contribution
 
