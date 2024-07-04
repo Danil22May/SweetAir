@@ -3,22 +3,21 @@
 
 ## Index
 
-- [Project 📝](#project-)
-    - [Distribution of tasks](#distribution-of-tasks-)
-- [Installation ⚙️](#installation-)
-    - [Requirements](#requirements-)
-- [Usage](#usage-)
-- [Charts 🛠️](#charts-)
-- [Technologies 🔧](#technologies-)
-    - [Front-end](#front-end-)
-    - [Back-end](#back-end-)
-- [Demo ](#demo-)
-- [Contribution 🤝](#contribution-)
-- [Developers](#developers-)
-- [Licence 📜](#licence-)
+- [Project](#project)
+    - [Distribution of tasks](#distribution-of-tasks)
+- [Installation](#installation)
+    - [Requirements](#requirements)
+- [Usage](#usage)
+- [Charts](#charts)
+- [Technologies](#technologies)
+    - [Front-end](#front-end)
+    - [Back-end](#back-end)
+- [Demo](#demo)
+- [Contribution](#contribution)
+- [Developers](#developers)
 
 
-## Project 
+## Project
 
 **SweetAir** is an innovative application web designed to show live updated air quality data from any city around the globe. 
 
@@ -132,13 +131,13 @@ By structuring our application this way, we ensure that the frontend remains res
 
 ## Technologies
 
-#### Frontend
+### Front-end
 HTML: The standard markup language for creating web pages.
 CSS: The language used to describe the style of document presentations.
 React: A JavaScript library for building user interfaces.
 Tailwind CSS: A utility-first CSS framework for rapid UI development.
 
-#### Backend
+### Back-end
 Java: A high-level, class-based, object-oriented programming language.
 JavaScript: A versatile programming language commonly used for web development.
 JUnit: A testing framework for Java.
