@@ -4,7 +4,7 @@ import CommentsMain from "../../comments/CommentsMain";
 import TipsStatus from "./tips/TipsStatus";
 
 
-const AirCityInfo = ({city, qualityNumber, status}) => {
+const AirCityInfo = ({city, qualityNumber, status, id}) => {
 
     return (
         <div className="flex flex-col">
@@ -14,7 +14,7 @@ const AirCityInfo = ({city, qualityNumber, status}) => {
                 <p className="uppercase self-center">Calidad Aire</p>
                 <p className="uppercase self-center text-[1.75em] font-medium">{status}</p>
             </section>
-            <TipsStatus id = {status} />
+            <TipsStatus id = {id} />
             <CommentsMain />
         </div>
     )

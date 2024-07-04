@@ -12,6 +12,7 @@ const AirQualityMain = () => {
     const [error, setError] = useState(null);
     const [backgroundClass, setBackgroundClass] = useState('bg-green-gradient'); 
     const [status, setStatus] = useState('buena'); 
+    const [id, setId] = useState("1"); 
 
     useEffect(() => {
         const fetchAirQualityData = async () => {
@@ -37,24 +38,31 @@ const AirQualityMain = () => {
         if (aqi <= 50) {
             setBackgroundClass('bg-green-gradient');
             setStatus('buena');
+            setId("1");
         } else if (aqi <= 100) {
             setBackgroundClass('bg-yellow-gradient');
             setStatus('media');
+            setId("2");
         } else if (aqi <= 150) {
             setBackgroundClass('bg-orange-gradient');
             setStatus('mala');
+            setId("3");
         } else if (aqi <= 200) {
             setBackgroundClass('bg-pink-gradient');
             setStatus('dañina');
+            setId("4");
         } else if (aqi <= 250) {
             setBackgroundClass('bg-red-gradient');
             setStatus('muy dañina');
+            setId("5");
         } else if (aqi <= 300) {
             setBackgroundClass('bg-violet-gradient');
             setStatus('arriesgada');
+            setId("6");
         } else {
             setBackgroundClass('bg-white-gradient');
             setStatus('muerte');
+            setId("7");
         }
     }, [airQualityData]);
 
@@ -74,6 +82,7 @@ const AirQualityMain = () => {
                     qualityNumber={airQualityData.data.aqi}
                     city={decodedCityName}
                     status={status}
+                    id = {id}
                 />
             )}
         </div>
