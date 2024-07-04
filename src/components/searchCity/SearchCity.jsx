@@ -27,7 +27,7 @@ const SearchCity = ({ className, text, view, length }) => {
                         value={cityName}
                         onChange={(e) => setCityName(e.target.value)}
                     />
-                    <Link to='/airquality'>
+                    <Link to={`/airquality/${encodeURIComponent(cityName)}`}>
                         <FontAwesomeIcon 
                             icon={faSearch} 
                             className={`text-[color:var(--col-dark)]  self-start fa-lg ml-7 ${view}`}

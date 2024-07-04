@@ -14,7 +14,7 @@ const AirCityInfo = ({city, qualityNumber, status}) => {
                 <p className="uppercase self-center">Calidad Aire</p>
                 <p className="uppercase self-center text-[1.75em] font-medium">{status}</p>
             </section>
-            <TipsStatus />
+            <TipsStatus id = {status} />
             <CommentsMain />
         </div>
     )
