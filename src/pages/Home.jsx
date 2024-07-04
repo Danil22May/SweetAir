@@ -12,7 +12,7 @@ const Home  = () => {
                 <h2 className="text-[5rem] font-[600] text-center mt-[-3rem]">Air</h2>
             </div>
             <SearchCity className="pt-[5rem] pl-[4.7rem] lg:ml-[36%]" text="Busca tu ciudad" length="w-[15rem]"/>
-            <img src="public/assets/wavesIntroDesktop.png" className="absolute bottom-0 z-[-1]"></img>
+            <img src="public/assets/wavesIntroDesktop.png" className="absolute bottom-0 z-[-1] object-right w-[100%]"></img>
         </div>
 
     )
