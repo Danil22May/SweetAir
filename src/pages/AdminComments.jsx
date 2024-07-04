@@ -22,7 +22,7 @@ const AdminComments = () => {
                 </div>
                 <div className="flex flex-col items-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-5 gap-3 drop-shadow-xl overflow-auto h-[30em]">
                     {comment.map((comment, index) => (
-                        <SingleComment key={index} comment={comment} admin="flex"/>
+                        <SingleComment key={index} comment={comment} admin={false}/>
                     ))}
                 </div>
                     <FormComments />

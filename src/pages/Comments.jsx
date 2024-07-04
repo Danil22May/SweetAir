@@ -35,9 +35,8 @@ const Comments = () => {
                 <div className="flex flex-row content-center self-end pb-2">
                     <h1 className="uppercase text-[1.5em] self-end">Comments</h1>
                 </div>
-                <div className="flex flex-col justify-center content-center bg-[color:var(--col-purer-white)] rounded-[22px] mt-[0.5em] py-5 gap-3 drop-shadow-xl overflow-auto h-[30em] no-scrollbar">
-                {comments.map((comment, index) => (
-                    <SingleComment key={index} comment={comment.comment} author={comment.author} admin="hidden"/>
+                <div className="w-[85%] m-auto flex flex-col items-center justify-center content-center bg-[color:var(--col-white)] rounded-[22px] mt-[1em] py-5 gap-4 drop-shadow-xl">                {comments.map((comment, index) => (
+                    <SingleComment key={index} comment={comment.comment} author={comment.author} admin={false}/>
                 ))}
                 </div>
                     <FormComments />
