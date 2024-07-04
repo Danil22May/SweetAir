@@ -1,5 +1,4 @@
 
-import Navbar from "../../logo/Navbar";
 import CommentsMain from "../../comments/CommentsMain";
 import TipsStatus from "./tips/TipsStatus";
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import AirCityInfo from '../components/airQuality/airCityInfo/AirCityInfo';
 import Navbar from '../components/logo/Navbar';
