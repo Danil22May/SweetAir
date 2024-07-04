@@ -1,7 +1,5 @@
 import tipsData from "../../../../utils/tipsData";
 import Tips from "./Tips";
-import { useParams } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
 
 
 const TipsStatus = ({id}) => {
