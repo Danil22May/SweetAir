@@ -1,14 +1,12 @@
 
-import Navbar from "../../../components/logo/Navbar";
-import CommentsMain from "../../../components/logo/comments/CommentsMain";
+import Navbar from "../../logo/Navbar";
+import CommentsMain from "../../comments/CommentsMain";
 import TipsStatus from "./tips/TipsStatus";
 
 
 const AirCityInfo = ({city, qualityNumber, status}) => {
 
     return (
-        <>
-        <Navbar />
         <div className="flex flex-col">
             <section className="flex flex-col px-[3em] text-[color:var(--col-dark)] ">
                 <h2 className="self-end uppercase text-[1.5em] pb-6">{city}</h2>
@@ -19,7 +17,6 @@ const AirCityInfo = ({city, qualityNumber, status}) => {
             <TipsStatus />
             <CommentsMain />
         </div>
-        </>
     )
 }
 
