@@ -32,8 +32,11 @@ const CommentsMain = () => {
             {comments.map(comment => (
                 <SingleComment key={comment.id} comment={comment.comment} author = {comment.author} />
             ))}
+            <Link to="/comments"><FontAwesomeIcon icon={faAngleDoubleRight} className="border-[solid] fa-lg text-[color:var(--col-dark)]"/></Link>
         </div>
     );
 };
+
+
 
 export default CommentsMain;
