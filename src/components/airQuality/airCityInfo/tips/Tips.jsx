@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Tips = ({items, interval = 3000}) => {
+const Tips = ({items, interval = 6000}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
