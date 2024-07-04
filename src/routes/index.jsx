@@ -5,6 +5,7 @@ import AirQualityMain from "../pages/airQuality/AirQualityMain";
 import Comments from "../pages/Comments";
 import Login from "../pages/Login";
 import AdminComments from "../pages/AdminComments";
+import Search from "../pages/Search";
 
 
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter ([
             { 
                 path:"/admin-comments",
                 element: <AdminComments />
+            },
+            { 
+                path:"/search",
+                element: <Search />
             },
         ]
     }
