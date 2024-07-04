@@ -132,17 +132,18 @@ By structuring our application this way, we ensure that the frontend remains res
 ## Technologies
 
 ### Front-end
-HTML: The standard markup language for creating web pages.
-CSS: The language used to describe the style of document presentations.
-React: A JavaScript library for building user interfaces.
-Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- HTML: The standard markup language for creating web pages.
+- CSS: The language used to describe the style of document presentations.
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Figma: cloud-based design tool for user interfaces, prototypes, and graphics.
 
 ### Back-end
-Java: A high-level, class-based, object-oriented programming language.
-JavaScript: A versatile programming language commonly used for web development.
-JUnit: A testing framework for Java.
-MySQL: An open-source relational database management system.
-Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- Java: A high-level, class-based, object-oriented programming language.
+- JavaScript: A versatile programming language commonly used for web development.
+- JUnit: A testing framework for Java.
+- MySQL: An open-source relational database management system.
+- Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 
 ## Demo
