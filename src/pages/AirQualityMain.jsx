@@ -4,6 +4,7 @@ import AirCityInfo from '../components/airQuality/airCityInfo/AirCityInfo';
 import Navbar from '../components/logo/Navbar';
 import { useParams } from 'react-router-dom';
 
+
 const AirQualityMain = () => {
     const { cityName } = useParams();
     const decodedCityName = decodeURIComponent(cityName);
@@ -60,7 +61,7 @@ const AirQualityMain = () => {
             setStatus('arriesgada');
             setId("6");
         } else {
-            setBackgroundClass('bg-white-gradient');
+            setBackgroundClass('bg-death-gradient');
             setStatus('muerte');
             setId("7");
         }
@@ -77,14 +78,20 @@ const AirQualityMain = () => {
     return (
         <div className={`w-screen h-screen ${backgroundClass}`}>
             <Navbar />
-            {airQualityData && (
-                <AirCityInfo
-                    qualityNumber={airQualityData.data.aqi}
-                    city={decodedCityName}
-                    status={status}
-                    id = {id}
-                />
-            )}
+            
+                <div className="lg:bg-[color:var(--col-purer-white)] lg:m-auto lg:w-[40%] lg:h-[75%] rounded-[20px] justify-center content-center lg:drop-shadow-xl ">
+                {airQualityData && (
+                    <AirCityInfo
+                        container="lg:justify-center bg-opacity-50"
+                        place="self-end lg:self-center"
+                        qualityNumber={airQualityData.data.aqi}
+                        city={decodedCityName}
+                        status={status}
+                        id = {id}
+                    />
+                )}
+                </div>
+            
         </div>
     );
 };
