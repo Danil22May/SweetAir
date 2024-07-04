@@ -4,8 +4,7 @@ import Navbar from "../components/logo/Navbar";
 
 const Layout = () => {
     return(
-        <div className="w-screen h-screen bg-green-gradient">
-            <Navbar />
+        <div>
             <main>
                 <Outlet />
             </main>
