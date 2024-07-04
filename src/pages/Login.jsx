@@ -1,13 +1,20 @@
+import Navbar from "../components/logo/Navbar";
+import SearchCity from "../components/searchCity/SearchCity";
+
 
 const Login  =() => {
 
     return (
         <>
-        <section className="h-96 border flex flex-col mx-auto w-96 gap-9">
-            <label htmlFor="city" className="text-4xl font-medium">Busca tu ciudad</label>
-            <input type="text" name="city" className="border-2 border-gray-400 p-2 rounded-md shadow-inner" />
-            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
-        </section>
+        <div className="w-screen h-screen bg-white-gradient absolute top-0 z-[-2]">
+            <Navbar/>
+            <div className="flex flex-col lg:ml-[36%]">
+                <SearchCity className="pt-[2rem] pl-[3.7rem] " text="Usuario" length="w-[20rem]" view="hidden"/>
+                <SearchCity className="pt-[2.5rem] pl-[3.7rem] " text="Contraseña" length="w-[20rem]" view="hidden"/>
+                <button className="bg-[--col-dark] text-[--col-white] w-[7rem] h-[2.5rem] rounded-[2.5rem] mt-[2.5rem] ml-[10rem]">Entrar</button>
+            </div>
+            <img src="public/assets/wavesIntroDesktop.png" className="absolute bottom-0 z-[-1] object-right w-[100%]"></img>
+        </div>
         </>
     )
 
