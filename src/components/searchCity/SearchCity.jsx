@@ -16,6 +16,7 @@ const SearchCity = ({ className, text, view, length }) => {
         }
     };
 
+
     return (
         <section>
             <div className={className}>
