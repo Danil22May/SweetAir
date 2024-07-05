@@ -94,10 +94,12 @@ node app.js
 Or build the Docker image using the provided Dockerfile:
 ```bash
 docker build -t my-react-app .
+docker build -t my-express-app .
 ```
-Run the Docker container
+Run the Docker containers
 ```bash
 docker run -p 5173:5173 my-react-app
+docker run -p 3000:3000 my-express-app
 ```
 ## Charts
 
