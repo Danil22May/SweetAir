@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 
 const Tips = ({ items, interval = 9000 }) => {
