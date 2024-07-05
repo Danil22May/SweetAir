@@ -90,7 +90,14 @@ And the following command for the Back:
 ```bash
 node app.js
 ```
-
+Or build the Docker image using the provided Dockerfile:
+```bash
+docker build -t my-react-app .
+```
+Run the Docker container
+```bash
+docker run -p 5173:5173 my-react-app
+```
 ## Charts
 
 **Back:**
