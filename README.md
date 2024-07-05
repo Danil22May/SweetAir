@@ -49,7 +49,7 @@ Ana was in charge of making adjustments and improvements to the database. Her ta
 
 Cris took the lead in both design and development, leveraging Figma for creating intuitive UI/UX layouts and conducting rigorous testing to ensure a seamless user experience.
 
-Daniil focused primarily on testing, participating in comprehensive testing sessions to validate the functionality and aesthetics of the web app.
+Daniil focused primarily on testing, and docker containers, participating in comprehensive testing sessions to validate the functionality and aesthetics of the web app.
 
 Betty played a crucial role in both design and development, utilizing Figma to translate design concepts into prototypes and coding the front-end components to bring the designs to life.
 
