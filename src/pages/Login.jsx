@@ -20,8 +20,8 @@ const Login  =() => {
         <>
         <div className="w-screen h-screen bg-white-gradient absolute top-0 z-[-2]">
             <Navbar/>
-            <div className="flex flex-col lg:ml-[36%]">
-                <form onSubmit={handleLogin}>
+            <div className="flex flex-col">
+                <form className="mx-auto" onSubmit={handleLogin}>
                     <div className="pt-[2rem] pl-[3.7rem]">
                         <h3 className="font-medium text-[--col-dark] text-[1.5rem] ">Usuario</h3>
                         <div>
@@ -48,7 +48,7 @@ const Login  =() => {
                     <button className="bg-[--col-dark] text-[--col-white] w-[7rem] h-[2.5rem] rounded-[2.5rem] mt-[2.5rem] ml-[10rem]" type= "submit">Entrar</button>
                 </form>
             </div>
-            <img src="public/assets/wavesIntroDesktop.png" className="absolute bottom-0 z-[-1] object-right w-[100%]"></img>
+            <img src="public/assets/wavesIntroDesktop.png" className="absolute bottom-0 z-[-1] object-right lg:h-[500px] w-[100%]"></img>
         </div>
         </>
     )

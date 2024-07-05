@@ -2,30 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --font-sans-main: 'Poppins', sans-serif;
-    --font-sans-secondary: 'Noto Sans', sans-serif;
-    --col-white: rgb(246 246, 246);
-    --col-purer-white: rgb(251 251 251);
-    --col-dark: rgb(53 44 53);
-    --col-green-1:rgb(186 235 73) ;
-    --col-green-2: rgb(145 217 73);
-    --col-yellow-1: rgb(255 228 85);
-    --col-yellow-2: rgb(247 217 60);
-    --col-orange-1: rgb(253 154 101);
-    --col-orange-2: rgb(238 132 75);
-    --col-pink-1: rgb(246 100 136);
-    --col-pink-2: rgb(231 70 110);
-    --col-red-1: rgb(159 58 64);
-    --col-red-2: rgb(118 38 43);
-    --col-violet-1: rgb(201 94 204);
-    --col-violet-2: rgb(192 59 195);
+  --font-sans-main: "Poppins", sans-serif;
+  --font-sans-secondary: "Noto Sans", sans-serif;
+  --col-white: rgb(246 246, 246);
+  --col-purer-white: rgb(251 251 251);
+  --col-dark: rgb(53 44 53);
+  --col-green-1: rgb(186 235 73);
+  --col-green-2: rgb(145 217 73);
+  --col-yellow-1: rgb(255 228 85);
+  --col-yellow-2: rgb(247 217 60);
+  --col-orange-1: rgb(253 154 101);
+  --col-orange-2: rgb(238 132 75);
+  --col-pink-1: rgb(246 100 136);
+  --col-pink-2: rgb(231 70 110);
+  --col-red-1: rgb(159 58 64);
+  --col-red-2: rgb(118 38 43);
+  --col-violet-1: rgb(201 94 204);
+  --col-violet-2: rgb(192 59 195);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
