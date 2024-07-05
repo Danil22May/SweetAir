@@ -62,6 +62,7 @@ Thanks to the collaboration and specialization of each team member, we were able
 
 - Node.js: [Download Node.js](https://nodejs.org/)
 - npm: comes with Node.js
+- Docker -optional: [Download Docker](https://www.docker.com/)
 
 You can then:
 
